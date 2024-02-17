@@ -4,3 +4,14 @@ const fwContainer=document.querySelector('#fireworks');
 const fireworks=new Fireworks(fwContainer)
 
 fireworks.start()
+
+const url=new URL(window.location.href)
+
+const fullname=url.searchParams.get('name').toUpperCase();
+// console.log(fullname);
+const greeterNameEl=document.getElementById('greeterName');
+if(fullname){
+    greeterNameEl.textContent=fullname;
+}else{
+    location.href="http://localhost:5174/festival-greeting-app/index.html"
+}
