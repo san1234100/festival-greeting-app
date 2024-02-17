@@ -13,5 +13,5 @@ const greeterNameEl=document.getElementById('greeterName');
 if(fullname){
     greeterNameEl.textContent=fullname;
 }else{
-    location.href="http://localhost:5174/festival-greeting-app/index.html"
+    location.href="/festival-greeting-app/index.html"
 }
