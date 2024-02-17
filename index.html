@@ -1,15 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Festival Greeting App</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- tailwindcss -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body>
-    <div class="text-green-300">Hello</div>
+  <body class="bg-gray-900" >
+    <div class="max-w-xl mx-auto flex items-center justify-center h-screen">
+      <form class="bg-white p-10 rounded space-y-4">
+        <input
+          type="text"
+          name="fullName"
+          id="fullName"
+          placeholder="Enter your name"
+          class="bg-gray-100 rounded w-full px-3 py-2 outline-none"
+          autofocus
+          required
+        />
+        <button
+          class="px-4 py-2 w-full text-white rounded bg-blue-500 hover:bg-blue-600"
+        >
+          Create your greeting
+        </button>
+      </form>
+    </div>
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
